@@ -6,7 +6,7 @@ pipeline{
         stages{
             stage("Build Docker Image"){
                 steps{
-                    sh "docker build . -t fsaito/hello-world:${DOCKER_TAG}"
+                    sh "docker build . -t datawire/hello-world:${DOCKER_TAG}"
                 }
             }   
         }
